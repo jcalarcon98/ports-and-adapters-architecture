@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from .routers import RouterVersionManager, APIVersion
+from .routers import APIVersion, RouterVersionManager
 from .routers.v1 import version_router
 
 
