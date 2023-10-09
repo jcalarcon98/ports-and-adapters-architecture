@@ -14,6 +14,10 @@ uvicorn = {extras = ["standard"], version = "^0.23.2"}
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.5.1"
+black = "^23.9.1"
+flake8 = "^6.1.0"
+pre-commit = "^3.4.0"
+isort = "^5.12.0"
 
 
 [build-system]
@@ -23,3 +27,11 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.mypy]
 disallow_untyped_defs = true
+
+
+[tool.black]
+line-length = 99
+
+
+[tool.isort]
+profile = "black"
