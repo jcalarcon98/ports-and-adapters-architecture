@@ -8,5 +8,5 @@ class RouterVersionManager:
         self.app = app
         self.version = version
 
-    def register_router(self, router: APIRouter):
+    def register_router(self, router: APIRouter) -> None:
         self.app.include_router(router, prefix=f'/api/{self.version.value}')
